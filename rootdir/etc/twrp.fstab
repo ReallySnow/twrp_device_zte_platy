@@ -1,0 +1,36 @@
+# Added backup flag for recovery, otherwise it doesn't appear
+# mount point	fstype		device						flags
+
+/system		      ext4		/dev/block/platform/soc/7824900.sdhci/by-name/system
+/system_image   emmc    /dev/block/platform/soc/7824900.sdhci/by-name/system
+/cache		      ext4		/dev/block/platform/soc/7824900.sdhci/by-name/cache
+/data		        ext4		/dev/block/platform/soc/7824900.sdhci/by-name/userdata  flags=encryptable=footer
+/boot		        emmc		/dev/block/platform/soc/7824900.sdhci/by-name/boot
+/recovery	      emmc		/dev/block/platform/soc/7824900.sdhci/by-name/recovery  flags=backup=1
+/firmware       vfat    /dev/block/platform/soc/7824900.sdhci/by-name/modem     flags=backup=1
+/persistent     emmc    /dev/block/platform/soc/7824900.sdhci/by-name/config    flags=backup=1
+/misc           emmc    /dev/block/platform/soc/7824900.sdhci/by-name/misc      flags=backup=1
+/DDR            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/DDR
+/aboot          emmc	/dev/block/platform/soc/7824900.sdhci/by-name/aboot
+/cfg            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/cfg
+/cmnlib         emmc	/dev/block/platform/soc/7824900.sdhci/by-name/cmnlib
+/devinfo        emmc	/dev/block/platform/soc/7824900.sdhci/by-name/devinfo
+/echarge        emmc	/dev/block/platform/soc/7824900.sdhci/by-name/echarge
+/fsc            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/fsc
+/fsg            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/fsg
+/keymaster      emmc	/dev/block/platform/soc/7824900.sdhci/by-name/keymaster
+/keystore       emmc	/dev/block/platform/soc/7824900.sdhci/by-name/keystore
+/metadata       emmc	/dev/block/platform/soc/7824900.sdhci/by-name/metadata
+/modem          emmc	/dev/block/platform/soc/7824900.sdhci/by-name/modem
+/modemst1       emmc	/dev/block/platform/soc/7824900.sdhci/by-name/modemst1
+/modemst2       emmc	/dev/block/platform/soc/7824900.sdhci/by-name/modemst2
+/oem            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/oem
+/pad            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/pad
+/persist        emmc	/dev/block/platform/soc/7824900.sdhci/by-name/persist
+/rpm            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/rpm
+/sbl1           emmc	/dev/block/platform/soc/7824900.sdhci/by-name/sbl1
+/sec            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/sec
+/splash         emmc	/dev/block/platform/soc/7824900.sdhci/by-name/splash
+/ssd            emmc	/dev/block/platform/soc/7824900.sdhci/by-name/ssd
+/tz             emmc	/dev/block/platform/soc/7824900.sdhci/by-name/tz
+# /dev/block/mmcblk1p1                       /sdcard         vfat    nosuid,nodev,barrier=1,data=ordered,nodelalloc                  wait
